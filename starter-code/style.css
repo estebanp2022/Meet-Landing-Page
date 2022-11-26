@@ -5,15 +5,17 @@
 body {
   font-family: "Red Hat Display", sans-serif;
   text-align: center;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
   width: 100%;
+  max-width: 1440px;
+  background-color: #fafafa;
 }
 
 .logo {
   width: 119px;
   height: 28px;
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
 .btn-general {
@@ -46,6 +48,10 @@ body {
   margin-bottom: 40px;
 }
 
+button {
+  font-size: 16px;
+}
+
 .btn-blue {
   background-color: #4d96a9;
 }
@@ -73,10 +79,24 @@ body {
 .num-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
 }
 
 .section-num {
-  border: 1px solid #87879d;
+  margin-bottom: -25px;
+  z-index: 1;
+  background-color: #fafafa;
+}
+
+.vertical-line {
+  border: 0.5px solid #87879d39;
+  height: 84px;
+}
+
+.section-num {
+  border: 0.5px solid #87879d57;
   border-radius: 50px;
   width: 50px;
   height: 50px;
@@ -105,6 +125,7 @@ body {
     line-height: 44px;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   h2 {
@@ -118,7 +139,7 @@ body {
 
   .hero-gallery-mobile {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .hero-gallery-right {
@@ -139,6 +160,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .num-container-1 {
+    margin: 80px 0;
+  }
+
+  .num-container-2 {
+    margin-top: 80px;
   }
 
   .gallery-container {
@@ -165,7 +194,7 @@ body {
 
     background-size: cover;
     background-position: center;
-    width: 100%;
+    object-fit: fill;
     height: 428px;
   }
 }
@@ -175,6 +204,7 @@ body {
   .header-text {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 40px;
   }
 
   .main-heading {
@@ -182,7 +212,8 @@ body {
     line-height: 48px;
     width: 40%;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 30px;
   }
 
   .section-text {
@@ -218,14 +249,19 @@ body {
     width: 55%;
   }
 
+  .main-text {
+    margin-top: 50px;
+  }
+
   .main-text p {
     width: 80%;
   }
 
   .footer-container {
     background-image: url("./assets/tablet/image-footer.jpg");
-    width: 768px;
-    height: 428px;
+    width: 100%;
+    /* object-fit: cover;
+    object-position: bottom; */
   }
 
   .footer-content h2 {
@@ -303,7 +339,7 @@ body {
     flex-direction: row;
     align-items: center;
     background-image: url("./assets/desktop/image-footer.jpg");
-    width: 1440px;
+    width: 100%;
     height: 308px;
   }
 
