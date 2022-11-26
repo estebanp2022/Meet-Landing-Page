@@ -14,16 +14,16 @@
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
+- View the optimal layout depending on their device's screen size (mobile: 375px, tablet: 768px, desktop: 1440px)
 - See hover states for interactive elements
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+[Live Site URL](https://your-live-site-url.com)
 
 ## My process
 
